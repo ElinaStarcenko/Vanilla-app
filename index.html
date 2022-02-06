@@ -25,25 +25,47 @@
   <link rel="stylesheet" href="src/style.css" />
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <h2>Sunday, 06.02.2022</h2>
-          <h3>16:32</h3>
+      <div class="main">
+        <form>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Start writing location..."
+            autofocus
+            autocomplete="off"
+          />
+          <button class="btn btn-primary" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="btn btn-success" type="button">
+            <i class="fas fa-map-marked-alt"></i>
+          </button>
         </div>
-        <div class="col-sm-4">
-          <h1>-3 °C / °F</h1>
+      </form>
+      <h1><span id="location">Place  </span><span id="day">Sunday,  </span><span id="time">16:32</span></h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <emoji>⛅</emoji>
+            <h3>Partly cloudy</h3>
+          </div>
+          <div class="col-sm-4">
+            <h2>- 3 <span class="units">°C / °F</span></h2>  
+            <div class="row">Feels like: 5 °C</div>
+          </div>
+          <div class="col-sm-4" class= "description">
+              <ul>
+                  <li>T max: 0 °C</li>
+                  <li>T min: - 4 °C</li>
+                  <li>Wind: 4 km/h</li>
+                  <li>Humidity: 80 %</li>
+              </ul>
+          </div>
+          </div>
         </div>
-        <div class="col-sm-4">
-          <h2>⛅</h2>
-          <h3>Partly cloudy</h3>
-        </div>
-        <div class="row">Feels like: 5 °C</div>
-        <div class="row">T max: 0 °C T min: - 4 °C</div>
-        <div class="row">Windspeed: 4 km/h</div>
-        <div class="row">Humidity: 80 %</div>
       </div>
 
-      <div>
+      <div class="coded">
         <a
           href="https://github.com/ElinaStarcenko/Vanilla-app"
           target="_blank"
